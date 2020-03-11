@@ -1,3 +1,5 @@
+# quarkus-kotlin-greeting
+[![Build Status](https://travis-ci.com/mplanchant/quarkus-kotlin-greeting.svg?branch=master)](https://travis-ci.com/mplanchant/quarkus-kotlin-greeting)
 ## Compiling and running
 
 Compile and run in `dev` mode:
