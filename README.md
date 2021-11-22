@@ -4,6 +4,12 @@ Compile and run in `dev` mode:
 
 `./mvnw compile quarkus:dev`
 
+Try it out:
+
+`curl -v http://localhost:8080/hello`
+
+`curl -v http://localhost:8080/hello/greeting/bob`
+
 Build a native executable:
 
 `export GRAALVM_HOME=/opt/graalvm/`

@@ -12,21 +12,20 @@ open class GreetingResourceTest {
     @Test
     fun testHelloEndpoint() {
         given()
-                .`when`().get("/hello")
-                .then()
-                .statusCode(200)
-                .body(`is`("hello"))
+            .`when`().get("/hello")
+            .then()
+            .statusCode(200)
+            .body(`is`("hello"))
     }
 
     @Test
     fun testGreetingEndpoint() {
         val uuid = UUID.randomUUID().toString()
         given()
-                .pathParam("name", uuid)
-                .`when`().get("/hello/greeting/{name}")
-                .then()
-                .statusCode(200)
-                .body(`is`("hello $uuid"))
+            .pathParam("name", uuid)
+            .`when`().get("/hello/greeting/{name}")
+            .then()
+            .statusCode(200)
+            .body(`is`("hello $uuid"))
     }
-
 }

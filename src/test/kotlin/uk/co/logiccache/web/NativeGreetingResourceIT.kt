@@ -1,6 +1,6 @@
 package uk.co.logiccache.web
 
-import io.quarkus.test.junit.SubstrateTest
+import io.quarkus.test.junit.NativeImageTest
 
-@SubstrateTest
+@NativeImageTest
 open class NativeGreetingResourceIT : GreetingResourceTest()
